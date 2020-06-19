@@ -1,0 +1,127 @@
+@charset "utf-8";
+$rem: 640/6.4rem;
+
+.container {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+
+  header {
+    width: 100%;
+    border-bottom: 2 / $rem solid #ccc;
+
+    p {
+      font-size: 32 / $rem;
+      line-height: 70 / $rem;
+      text-align: center;
+    }
+  }
+
+  .date {
+    font-size: 23.89/$rem;
+    color: #333333;
+    height: 83/$rem;
+    line-height: 83/$rem;
+    background-color: #f5f5f5;
+    padding: 0px 26/$rem;
+  }
+
+  .list-box {
+    background-color: #fff;
+    padding: 0px 26/$rem;
+
+    li {
+      border-top: 1px solid #f6f6f6;
+      height: 74/$rem;
+      line-height: 74/$rem;
+
+      .stage {
+        display: block;
+        font-size: 25.59/$rem;
+        color: #999999;
+        width: 134/$rem;
+        white-space: nowrap;
+        float: left;
+      }
+
+      .desc {
+        display: block;
+        width: 454/$rem;
+        font-size: 25.59/$rem;
+        color: #000000;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        float: left;
+      }
+    }
+  }
+
+  .page-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10/$rem;
+    a {
+      font-size: 28/$rem;
+      line-height: normal;
+      padding: 5/$rem 15/$rem;
+      border: 1px solid #b9b9b9;
+      color: #999999;
+      margin: 0 10/$rem;
+      text-decoration: none;
+    }
+
+    .current {
+      background: #e62f31;
+      color: #fff;
+      border: 1px solid #e62f31;
+    }
+  }
+}
+
+.more-btn {
+  display: block;
+  margin: 0px auto;
+  font-size: 22.18/$rem;
+  color: #999999;
+  background-color: #fff;
+  outline: none;
+  height: 74/$rem;
+  line-height: 74/$rem;
+
+  img {
+    width: 30/$rem;
+    margin-left: 10/$rem;
+  }
+}
+
+.ad {
+  display: block;
+  width: 588/$rem;
+  border-radius: 10/$rem;
+  margin: 30/$rem auto;
+  img{
+    width: 100%;
+  }
+}
+
+.toTop {
+  position: fixed;
+  right: 26/$rem;
+  bottom: 100/$rem;
+  width: 90/$rem;
+  height: 90/$rem;
+  border-radius: 90/$rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: 1px solid #b2b2b2;
+  background-color: #fff;
+
+  img {
+    width: 60/$rem;
+  }
+}
